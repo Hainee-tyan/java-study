@@ -1,14 +1,14 @@
 public class Calculator {
 
 	/**
-		Summ variable.
+		Sum variable.
 	*/
-	private double summ = 0;
+	private double mSum = 0;
 
 	/**
 		Product variable.
 	*/
-	private double product = 1;
+	private double mProduct = 1;
 
 	/**
 		Adds arguments.
@@ -16,23 +16,23 @@ public class Calculator {
 	*/
 	public void add(double ... args) {
 		for (double arg : args) {
-			this.summ += arg;
+			mSum += arg;
 		}
 	}
 
 	/**
-		Returns summ.
-		@return Summ.
+		Returns sum.
+		@return Sum.
 	*/
-	public double getSumm() {
-		return this.summ;
+	public double getSum() {
+		return mSum;
 	}
 
 	/**
-		Clears summ.
+		Clears sum.
 	*/
-	public void clearSumm() {
-		this.summ = 0;
+	public void clearSum() {
+		mSum = 0;
 	}
 
 
@@ -42,7 +42,7 @@ public class Calculator {
 	*/
 	public void multiply(double ... args) {
 		for (double arg : args) {
-			this.product *= arg;
+			mProduct *= arg;
 		}
 	}
 
@@ -51,15 +51,13 @@ public class Calculator {
 		@return Product.
 	*/
 	public double getProduct() {
-		return this.product;
+		return mProduct;
 	}
 
 	/**
 		Clears product.
 	*/
 	public void clearProduct() {
-		this.product = 1;
-	}
-
-	
+		mProduct = 1;
+	}	
 }

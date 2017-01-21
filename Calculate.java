@@ -1,6 +1,12 @@
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
 
+/**
+	This class gets 2 numbers from input stream
+	and prints actions with them: addition,
+	subtraction, multiplication, division and
+	involution.
+*/
 public class Calculate {
 
 	private static char[] mActions = {'+', '-', '*', '/', '^', '?'};
