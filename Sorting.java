@@ -9,9 +9,11 @@ public class Sorting {
 			System.out.print(i + " ");
 		System.out.println();
 
-		BubbleSort.sort(array);
+		SelectionSort.sort(array);
 
+		System.out.print("Sorted array: ");
 		for (int i : array)
 			System.out.print(i + " ");
+		System.out.println();
 	}
 }
